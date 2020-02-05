@@ -39,7 +39,7 @@ def help(update, context):
 def echo(update, context):
     """Echo the user message."""
     update.message.reply_text("No " + update.message.text)
-
+    print(update.message.text)
 
 def error(update, context):
     """Log Errors caused by Updates."""
